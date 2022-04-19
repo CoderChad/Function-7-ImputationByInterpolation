@@ -46,6 +46,5 @@ def imputationByInterpolation(data):
             data[g[0]] = (data[g[0]-1]+data[g[0]+1])/2
         
     return data
-
 data=np.genfromtxt('./data/sampleimput1.csv')
 newdata=imputationByInterpolation(data)
